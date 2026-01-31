@@ -16,4 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateTimer();
     setInterval(updateTimer, 1000); // Updates every second
+const regButtons = document.querySelectorAll('.register-locked');
+    
+    regButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevents the link from jumping to top
+            alert("Thank you for your interest! Registration for the National Conference on India-Central Asia Relations will open shortly.");
+        });
+    });
 });
